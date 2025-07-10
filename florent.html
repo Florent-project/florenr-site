@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florent - 자연쉴드</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background-image: url('main-background.jpg'); /* 너가 보낸 식물배경 이미지 */
+      background-size: cover; /* 잘리지 않고 전체 보이도록 */
+      background-position: top center;
+      background-repeat: no-repeat;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      /* background-color: rgba(255, 255, 255, 0.8); */
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .logo img {
+        width: 160px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    nav{
+        width: 400px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .main-content {
+      text-align: center;
+      margin-top: 100px;
+      padding: 20px;
+      color: #104010;
+    }
+    .main-content h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    .main-content h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .main-content p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .dropdown{
+        position : relative;
+        display : inline-block;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #e6efe3;
+        min-width: 150px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        z-index: 10;
+    }
+
+    .dropdown-content a{
+        padding: 10px 15px;
+        color: #333;
+        display : block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="florent-logo.png" alt="Florent 로고" />
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">회사소개</a>
+                <div class="dropdown-content">
+                    <a href="#">florent브랜드</a>
+                    <a href="#">서비스 개요</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">제품특징</a>
+                <div class="dropdown-content">
+                    <a href="#">기술 소개</a>
+                    <a href="#">벌레차단 제품</a>
+                    <a href="#">성능 비교</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">지원시설</a>
+                <div class="dropdown-content">
+                    <a href="#">AS 센터</a>
+                    <a href="#">고객지원실</a>
+                    <a href="#">기술 자료실</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">커뮤니티</a>
+                <div class="dropdown-content">
+                    <a href="#">공지사항</a>
+                    <a href="#">후기 안내</a>
+                    <a href="#">1대1 문의</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>FLORENT</h1>
+        <h2>당신의 일상에 자연을 입히다</h2>
+        <p>자연친화적 · 환경보호 · 식물 유래 방충성분</p>
+    </div>
+</body>
+</html>
